@@ -1,0 +1,25 @@
+.card{
+    background-color: #fff;
+    width: 240px;
+    margin: auto;
+    padding: 10px;
+   
+}
+
+.card .product {
+    border: solid 1px grey ;
+}
+
+.card:hover{
+    border: solid 1px;
+}
+
+.card:hover .product {
+    border: none;
+}
+
+.card:hover .product .name {
+     color: green;
+}
+
+
