@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="index.js" ></script>
+   
 </head>
 <body class="bg-[#eee] max " >
     <h3 class="text-center mt-10" >ORGANIC PRODUCTS</h3>
-    <div class="container max-w-[1000px] m-auto flex  flex-wrap gap-4 mt-3 p-20 ">
+    <div class="container max-w-[1150px] m-auto flex  flex-wrap gap-4 mt-3 p-20 ">
         <div class="card">
-            <div class="product" >
+            <div class="product"  data-name="p-1" >
                 <img src="images/1.png" alt="">
                 <div class="name text-center   ">Stawberries</div>
                 <div class="price text-center text-sm ">2000 frs</div>
@@ -23,7 +23,7 @@
            
         </div>
         <div class="card">
-            <div class="product">
+            <div class="product" data-name="p-2" >
                 <img src="images/2.png" class=" ">
                 <div class="name text-center   ">Onions</div>
                 <div class="price text-center text-sm ">2000 frs</div>
@@ -31,7 +31,7 @@
             
         </div>
         <div class="card">
-            <div class="product" >
+            <div class="product" data-name="p-3" >
                 <img src="images/3.png" alt="">
                 <div class="name text-center   ">Tomatoes</div>
                 <div class="price text-center text-sm ">2000 frs</div>
@@ -39,7 +39,7 @@
            
         </div>
         <div class="card">
-            <div class="product" >
+            <div class="product"  data-name="p-4" >
                 <img src="images/4.png" alt="">
                 <div class="name text-center   ">Brinjal</div>
                 <div class="price text-center text-sm ">2000 frs</div>
@@ -47,7 +47,7 @@
            
         </div>
         <div class="card">
-            <div class="product" >
+            <div class="product" data-name="p-5"  >
                 <img src="images/5.png" alt="">
                 <div class="name text-center   ">Brocoli</div>
                 <div class="price text-center text-sm ">2000 frs</div>
@@ -55,7 +55,7 @@
             
         </div>
         <div class="card">
-            <div class="product" >   
+            <div class="product" data-name="p-6" >   
                 <img src="images/6.png" alt="">
                 <div class="name text-center   ">Potatoes</div>
                 <div class="price text-center text-sm ">2000 frs</div>
@@ -63,7 +63,125 @@
             </div>
            
         </div>
+       
     </div>
-    
+    <div class="products-preview" >
+        <div class="preview " data-target="p-1" >
+            <i class="fas fa-times" ></i>
+            <img src="images/1.png" alt="">
+            <h3>organic strawberries</h3>
+            <div class="stars" >
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star-half-alt" ></i>
+            <span>( 250 )</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="price" >2000 frs</div>
+            <div class="buttons">
+                <a href="#" class="buy" >buy now</a>
+                <a href="#" class="cart" >add to cart</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-2" >
+            <i class="fas fa-times" ></i>
+            <img src="images/2.png" alt="">
+            <h3>organic onions</h3>
+            <div class="stars" >
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star-half-alt" ></i>
+            <span>( 250 )</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="price" >2000 frs</div>
+            <div class="buttons">
+                <a href="#" class="buy" >buy now</a>
+                <a href="#" class="cart" >add to cart</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-3" >
+            <i class="fas fa-times" ></i>
+            <img src="images/3.png" alt="">
+            <h3>organic Tomatoes</h3>
+            <div class="stars" >
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star-half-alt" ></i>
+            <span>( 250 )</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="price" >2000 frs</div>
+            <div class="buttons">
+                <a href="#" class="buy" >buy now</a>
+                <a href="#" class="cart" >add to cart</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-4" >
+            <i class="fas fa-times" ></i>
+            <img src="images/4.png" alt="">
+            <h3>organic brinjal</h3>
+            <div class="stars" >
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star-half-alt" ></i>
+            <span>( 250 )</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="price" >2000 frs</div>
+            <div class="buttons">
+                <a href="#" class="buy" >buy now</a>
+                <a href="#" class="cart" >add to cart</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-5" >
+            <i class="fas fa-times" ></i>
+            <img src="images/5.png" alt="">
+            <h3>organic brocoli</h3>
+            <div class="stars" >
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star-half-alt" ></i>
+            <span>( 250 )</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="price" >2000 frs</div>
+            <div class="buttons">
+                <a href="#" class="buy" >buy now</a>
+                <a href="#" class="cart" >add to cart</a>
+            </div>
+        </div>
+        <div class="preview" data-target="p-6" >
+            <i class="fas fa-times" ></i>
+            <img src="images/6.png" alt="">     
+            <h3>organic Potatoes</h3>
+            <div class="stars" >
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star" ></i>
+                <i class="fas fa-star-half-alt" ></i>
+            <span>( 250 )</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="price" >2000 frs</div>
+            <div class="buttons">
+                <a href="#" class="buy" >buy now</a>
+                <a href="#" class="cart" >add to cart</a>
+            </div>
+        </div>
+        
+    </div>
+    <script src="index.js" ></script>
 </body>
 </html>
